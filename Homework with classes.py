@@ -4,7 +4,7 @@
 
 '''class Soda:
 
-    def init(self, supplement):
+    def __init__(self, supplement):
         self.soda_pop = 'обычная'  # тип газировки
         self.supplement = supplement  # добавка
 
@@ -30,7 +30,7 @@ second.display_info()'''
 
 
 '''class Nikolai:
-    slots = ['name', 'age']
+  __slots__ = ['name', 'age']
 
     def init(self, age, name):
         self.name = name
@@ -48,7 +48,7 @@ pers_one.something = 'что-то'''
 
 
 '''class Student:
-    def init(self, name='Иван', age=18, group_number='10A'):
+    def __init__(self, name='Иван', age=18, group_number='10A'):
         self.name = name
         self.age = age
         self.groupNumber = group_number
@@ -88,7 +88,7 @@ print(f'{Minecrafter.get_name()} {Minecrafter.get_age()} {Minecrafter.get_group_
 
 
 '''class Math:
-    def init(self,a,b):
+    def __init__(self,a,b):
         self.a = a
         self.b = b
 
