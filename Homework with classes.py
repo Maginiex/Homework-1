@@ -32,7 +32,7 @@ second.display_info()'''
 '''class Nikolai:
   __slots__ = ['name', 'age']
 
-    def init(self, age, name):
+    def __init__(self, age, name):
         self.name = name
         if self.name != 'Николай':
             print(f'Я ВООБЩЕ-ТО НИКОЛАЙ! Никакой не {self.name}')
